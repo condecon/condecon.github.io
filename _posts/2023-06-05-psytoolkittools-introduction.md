@@ -2,7 +2,6 @@
 layout: post
 title: "Introducing psytoolkittools: A new R package for PsyToolkit data analysis"
 date: 2023-05-06 06:00:00 +0000
-categories: psytoolkittools
 ---
 
 [PsyToolkit](https://psytoolkit.org) is a free platform for online psychological research and information. It allows you to create and run cognitive-psychological experiments and surveys, including personality tests, in your browser.
