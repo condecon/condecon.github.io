@@ -23,7 +23,7 @@ name: "Jonas Engicht"
 email: jonasencode@condecon.de
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonasencode.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  JonasEnCode
 
 # Build settings
