@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Projects
 permalink: /projects
 ---
@@ -13,31 +13,9 @@ psytoolkittools is currently under development and can be found on GitHub. You c
 
 [psytoolkittools on GitHub](https://github.com/JonasEnCode/psytoolkittools)
 
-
-
-#### Installation
-**Dependencies**
-
-- reticulate
-- cpp11
-- cli
-- glue
-- devtools
-
-```
-install.packages(c("reticulate", "cpp11", "cli1", "glue", "devtools"))
-```
-
-**Package Installation**
-```
-library(devtools)
-install_github("JonasEnCode/psytoolkittools")
-```
-
-
-
-
 #### PsyToolkit References
 - Stoet, G. (2010). PsyToolkit - A software package for programming psychological experiments using Linux. Behavior Research Methods, 42(4), 1096-1104.
 
 - Stoet, G. (2017). PsyToolkit: A novel web-based method for running online questionnaires and reaction-time experiments. Teaching of Psychology, 44(1), 24-31.
+
+#### [**Go to Documentation**](/projects/psytoolkittools/documentation)

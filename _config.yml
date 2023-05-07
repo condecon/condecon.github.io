@@ -27,7 +27,7 @@ url: "https://jonasencode.github.io/" # the base hostname & protocol for your si
 github_username:  JonasEnCode
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-sitemap

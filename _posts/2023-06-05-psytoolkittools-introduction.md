@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Introducing psytoolkittools: A new R package for PsyToolkit data analysis"
 date: 2023-05-06 06:00:00 +0000
 ---
@@ -15,7 +15,7 @@ That’s why I am developing a new R package called **psytoolkittools**. This pa
 devtools::install_github("JonasEnCode/psytoolkittools")
 ```
 
-We hope that psytoolkittools will be useful for PsyToolkit users who want to analyze their data in R. I am still working on improving the package and adding more features. If you have any feedback, suggestions, or questions, please feel freeopen an issue on [GitHub](https://github.com/JonasEnCode/psytoolkittools/issues). I would love to hear from you.
+I hope that psytoolkittools will be useful for PsyToolkit users who want to analyze their data in R. I am still working on improving the package and adding more features. If you have any feedback, suggestions, or questions, please feel freeopen an issue on [GitHub](https://github.com/JonasEnCode/psytoolkittools/issues). I would love to hear from you.
 
 
 Find out more on the [psytoolkittools project site](/projects).
