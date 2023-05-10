@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="JonasEnCode">
 <meta property="og:title" content="psytoolkittools Documentation">
-<meta property="og:url" content="https://jonasencode.github.io//projects/psytoolkittools/documentation">
+<meta property="og:url" content="https://jonasencode.github.io//psytoolkittools/documentation">
 
 
   <meta property="og:description" content="">
@@ -37,7 +37,7 @@
 
 
 
-<link rel="canonical" href="https://jonasencode.github.io//projects/psytoolkittools/documentation">
+<link rel="canonical" href="https://jonasencode.github.io//psytoolkittools/documentation">
 
 
 
@@ -113,7 +113,7 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/projects">Projects</a>
+              <a href="/psytoolkittools">psytoolkittools</a>
             </li><li class="masthead__menu-item">
               <a href="/about">About</a>
             </li></ul>
@@ -160,7 +160,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
-              <ul class="toc__menu"><li><a href="#getting-started">Getting Started</a><ul><li><a href="#installing">Installing</a></li><li><a href="#loading-data">Loading Data</a><ul><li><a href="#load-experiment-data">Load Experiment Data</a></li></ul></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#getting-started">Getting Started</a><ul><li><a href="#installing">Installing</a></li><li><a href="#loading-data">Loading Data</a><ul><li><a href="#loading-experiment-data">Loading Experiment Data</a></li></ul></li></ul></li><li><a href="#utilities">Utilities</a><ul><li><a href="#recodekeys">recode.keys</a></li><li><a href="#recodestatus">recode.status</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -203,7 +203,7 @@ For example:</p>
 <p>The function returns a data frame with the survey awnsers.
 A folder called “psy_data” is created. Do not delete this folder as it is nessecary for loading experiment data.</p>
 
-<h3 id="load-experiment-data">Load Experiment Data</h3>
+<h3 id="loading-experiment-data">Loading Experiment Data</h3>
 <p>To easily load the experiment data, the package provides the <code class="language-plaintext highlighter-rouge">load.experiment.data()</code> function.
 This functions requires two arguments:</p>
 <ul>
@@ -214,6 +214,25 @@ This functions requires two arguments:</p>
 <p>The function returns a data frame which can be combined with the survey data frame by passing it to the function.</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">load.experiment.data</span><span class="p">(</span><span class="n">experiment.file.names</span><span class="p">,</span><span class="w"> </span><span class="n">label.structure</span><span class="p">,</span><span class="w"> </span><span class="n">merge.dataframe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">surveydata</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
+
+<h1 id="utilities">Utilities</h1>
+
+<h2 id="recodekeys"><code class="language-plaintext highlighter-rouge">recode.keys</code></h2>
+<p>In PsyToolkit, when saving keys, the pressed key itself is not saved instead the position in which the key was definied is saved.
+For further analysis, it can be helpful to reverse the saved value to the name of the original key that has been pressed by the participant.
+In this case <code class="language-plaintext highlighter-rouge">recode.keys()</code> can be used.
+The function takes to parameters. The first is the vector or column that shall be recoded. The second parameter is a vector of characters in which the characters are in the same line up than in the experiment code.
+For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#experiment code
+...
+keys 1 2 3 4 space
+...
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#R code</span><span class="w">
+</span><span class="n">recode.keys</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w"> </span><span class="s2">"space"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+<h2 id="recodestatus"><code class="language-plaintext highlighter-rouge">recode.status</code></h2>
 
         
       </section>
@@ -250,19 +269,19 @@ This functions requires two arguments:</p>
 
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-
-    
-
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2023 Jonas Engicht. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
+    <ul class="social-icons">
+      
+  
+      
+  
+      
+        <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      
+    </ul>
+  </div>
+  
+  <div class="page__footer-copyright"><a href="/imprint">Imprint</a> <a href="/privacy">Privacy</a> <br>&copy; 2023 Jonas Engicht. </div>
+  
       </footer>
     </div>
 
