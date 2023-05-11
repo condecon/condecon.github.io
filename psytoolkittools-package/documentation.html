@@ -195,10 +195,10 @@ Both can be be easily done by using the following R code.</p>
 PsyToolkit website. You will receive a .ZIP file. Move this file to your
 current R working directory.</p>
 
-<p>In R, load the <code class="language-plaintext highlighter-rouge">psytoolkittools</code> package and run the <code class="language-plaintext highlighter-rouge">load(filename)</code> function.
+<p>In R, load the <code class="language-plaintext highlighter-rouge">psytoolkittools</code> package and run the <code class="language-plaintext highlighter-rouge">load.survey(filename)</code> function.
 For example:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">psytoolkittools</span><span class="p">)</span><span class="w">
-</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">load</span><span class="p">(</span><span class="s2">"data.zip"</span><span class="p">)</span><span class="w">
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">load.survey</span><span class="p">(</span><span class="s2">"data.zip"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 <p>The function returns a data frame with the survey awnsers.
 A folder called “psy_data” is created. Do not delete this folder as it is nessecary for loading experiment data.</p>
@@ -233,6 +233,14 @@ keys 1 2 3 4 space
 </span><span class="n">recode.keys</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w"> </span><span class="s2">"space"</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
 <h2 id="recodestatus"><code class="language-plaintext highlighter-rouge">recode.status</code></h2>
+
+<p>In PsyToolkit experiments, a status of 1 represents a correct and 2 an incorrect answer. 3 represents a time out.<br />
+With <code class="language-plaintext highlighter-rouge">recode.status()</code>, status codes can be recoded to custom values.</p>
+
+<p><em>Example:</em></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">recode.status</span><span class="p">(</span><span class="n">vector</span><span class="p">,</span><span class="w"> </span><span class="n">correct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-99</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 
         
       </section>
