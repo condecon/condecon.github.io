@@ -1,8 +1,8 @@
 Package: psytoolkittools
 Version: 0.1.0
-Imports: cli, glue, reticulate, stringr, readr (>= 2.1.4)
+Imports: glue, reticulate, readr (>= 2.1.4)
 LinkingTo: cpp11
 Suggests: testthat (>= 3.0.0)
-License: MIT + file LICENSE
-MD5sum: 37665afd0e08d167bcf5444b02ebc4a7
+License: MIT
+MD5sum: 9c36fc6c912258e09b43063710d86e55
 NeedsCompilation: yes
