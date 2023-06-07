@@ -15,3 +15,12 @@ Suggests: testthat (>= 3.0.0)
 License: MIT
 MD5sum: f81431228bac5c7579cf6712262a7a0c
 NeedsCompilation: yes
+
+Package: psytoolkittools
+Version: 1.0.0
+Imports: cli, glue, readr (>= 2.1.4)
+LinkingTo: cpp11
+Suggests: testthat (>= 3.0.0)
+License: MIT
+MD5sum: c4196af13de336935b14c32d6091cc0a
+NeedsCompilation: yes
